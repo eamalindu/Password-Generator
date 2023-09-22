@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <!--Boostrap CSS-->
+    <link href="../../__Resources__/bootstrap-5.2.3/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Fontawesome CSS File-->
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="css/style.css" rel="stylesheet">
+    <!--Bootstrap JS-->
+    <script src="../../__Resources__/bootstrap-5.2.3/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container min-vh-100 d-flex align-items-center">
+    <div class="custom-div">
+        <h1>Password Generator</h1>
+        <div class="input-group mb-3">
+            <label class="form-label" for="textRange">Password Length : <span class="fw-bold" id="passwordLength">8</span></label>
+            <input class="form-range" id="textRange" max="16" min="8" type="range" value="8">
+        </div>
+        <div class="form-check">
+            <input checked class="form-check-input" id="checkLowercase" type="checkbox" value="">
+            <label class="form-check-label" for="checkLowercase">
+                Lowercase (abc)
+            </label>
+        </div>
+        <div class="form-check">
+            <input checked class="form-check-input" id="checkUppercase" type="checkbox" value="">
+            <label class="form-check-label" for="checkUppercase">
+                Uppercase (ABC)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" id="checkNumbers" type="checkbox" value="">
+            <label class="form-check-label" for="checkNumbers">
+                Numbers (123)
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" id="checkSymbol" type="checkbox" value="">
+            <label class="form-check-label" for="checkSymbol">
+                Randomized symbols (!#$)
+            </label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text bg-light" for="textPassword">Your Password</label>
+            <input class="form-control bg-dark text-white" id="textPassword" type="text">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-danger" id="btnReset">Reset</button>
+            <button class="btn btn-success float-end" id="btnGenerate">Generate</button>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
