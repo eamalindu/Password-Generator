@@ -6,4 +6,4 @@ Created as the 13rd project in the 40 projects for web developer
   2)  User can select the password length
   3)  User can select the password types
 
-Try it from here => https://password-generator.eamalindu.repl.co/
+Try it from here => (https://eamalindu.github.io/Password-Generator/)
